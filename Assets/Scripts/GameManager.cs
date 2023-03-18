@@ -9,12 +9,10 @@ public class GameManager : MonoBehaviour
 {
 	public static GameManager Instance;
 
-	//public Color TeamColor;
 
 	public string playerName;
 	public string playerNameHighScore;
 	public int highScore;
-	//public TMP_Text highScoreText;
 
 	private void Awake()
 	{
@@ -27,12 +25,6 @@ public class GameManager : MonoBehaviour
 		Instance = this;
 		DontDestroyOnLoad(gameObject);
 		LoadHighScoreData();
-	}
-
-	private void Start()
-	{
-		//highScoreText.text = $"High Score : {playerNameHighScore} : {highScore}";
-		Debug.Log("?");
 	}
 
 	[System.Serializable]
